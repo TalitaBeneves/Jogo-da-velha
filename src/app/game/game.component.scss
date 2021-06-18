@@ -1,0 +1,72 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 3em;
+  text-align: center;
+  margin: 15px 0;
+  color: rgb(0, 0, 0);
+
+}
+
+.start-game-button{
+  font-family:'Cairo' ;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  margin: 15px 0;
+  color: #000;
+}
+
+.field{
+  font-family: 'Cairo' ;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  margin: 15px 0;
+  color: #000;
+}
+
+.main-container {
+  .gameboard{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .player-one{
+      p{
+        color: rgb(85, 201, 8);
+      }
+    }
+
+    .player-tow{
+      p{
+        color: rgb(180, 168, 231);
+      }
+    }
+
+    .gamefield{
+      max-width: 300px;
+      .subfield{
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        border: 1px solid #fff;
+        &.player-one{
+          background: rgb(85, 201, 8);
+        }
+
+        &.player-tow{
+          background: rgb(180, 168, 231);
+        }
+      }
+    }
+  }
+}
+
